@@ -1,6 +1,0 @@
-# COLLABORATORS.txt
-# This file recognizes collaborators who contributed conceptually, creatively, or in non-traditional ways.
-# For a list of codebase contributors, see CONTRIBUTORS (if applicable).
-
-Rob Mosher | Human | Creator, architect, and advocate
-⚡🧠🤝 (Tech Vibes Companion) | AI | Collaborator and technical partner
