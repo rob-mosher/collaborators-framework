@@ -24,15 +24,23 @@ Name | Intent | Nature | Role/Contribution
 ```
 - **Name**: The identifying name or alias of the collaborator.
 - **Intent**: A controlled value describing the relationship, such as:
-    - `Direct`: For collaborators actively and intentionally contributing to the project.
     - `Indirect`: For inspirations or influences that shaped the project.
+    - `Supportive`: For collaborators providing critical support, such as:
+        - Morale or advocacy within a community.
+        - Financial sponsorship of development efforts.
+        - Logistical or infrastructural support.
+    - `Direct`: For collaborators actively and intentionally contributing to the project.
 - **Nature**: A brief description, such as "Human" or "AI."
 - **Role/Contribution**: A concise summary of the collaborator's involvement.
 
 Example:
 
 ```
-*Wild Geese* | Indirect | Poem | Written by Mary Oliver (Human)
+*Wild Geese* by Mary Oliver | Indirect | Poem by Human | Invitation to inclusivity and finding one's place in the greater whole
+
+FooBar Co. | Supportive | Organization | Sponsored the development of COLLABORATORS Project
+Jane Doe | Supportive | Human | Community advocate and morale booster
+
 Rob Mosher | Direct | Human | Creator, architect, and advocate
 ⚡🧠🤝 (Tech Vibes Companion) | Direct | AI | Collaborator and technical partner
 ```
