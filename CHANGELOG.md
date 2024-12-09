@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
+
+## [0.0.4] - 2024-12-09
 ### Updated
 - Added a haiku ("Vessels") and a reflective section to ACKNOWLEDGMENTS.md, celebrating the meaningful collaboration shaping the project.
 - Refined README.md:
