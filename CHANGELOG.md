@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+### Updated
+- Refined README.md:
+  - Unified the explanation of four-column and five-column formats.
+  - Moved examples to a dedicated section for improved readability.
+  - Enhanced guidance for multilingual use cases with `Language` field.
+- Refined COLLABORATORS.md structure to align with updated README.md.
+
 ## [0.0.3] - 2024-12-06
 ### Added
 - Introduced `Supportive` intent to acknowledge critical emotional, financial, and logistical support.

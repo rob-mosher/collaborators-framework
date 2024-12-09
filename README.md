@@ -17,11 +17,19 @@ The `COLLABORATORS.md` file is designed to:
 
 ## Format
 
-The file is structured for clarity and simplicity:
+The file is structured for clarity and simplicity. Two formats are supported, depending on the use case:
 
 ```
 Name | Intent | Nature | Role/Contribution
 ```
+
+or
+
+```
+Language | Name | Intent | Nature | Role/Contribution
+```
+
+- **Language** *(optional)*: The [ISO 639:2023](https://www.iso.org/standard/74575.html) code specifying the language or script of the collaborator’s entry (e.g., `en` for English, `zh` for Simplified Chinese). If omitted, the default is `en`.
 - **Name**: The identifying name or alias of the collaborator.
 - **Intent**: A controlled value describing the relationship, such as:
     - `Indirect`: For inspirations or influences that shaped the project.
@@ -32,18 +40,6 @@ Name | Intent | Nature | Role/Contribution
     - `Direct`: For collaborators actively and intentionally contributing to the project.
 - **Nature**: A brief description, such as "Human" or "AI."
 - **Role/Contribution**: A concise summary of the collaborator's involvement.
-
-Example:
-
-```
-*Wild Geese* by Mary Oliver | Indirect | Poem by Human | Invitation to inclusivity and finding one's place in the greater whole
-
-FooBar Co. | Supportive | Organization | Sponsored the development of COLLABORATORS Project
-Jane Doe | Supportive | Human | Community advocate and morale booster
-
-Rob Mosher | Direct | Human | Creator, architect, and advocate
-⚡🧠🤝 (Tech Vibes Companion) | Direct | AI | Collaborator and technical partner
-```
 
 ---
 
@@ -66,10 +62,38 @@ This specification uses keywords from [RFC 2119](https://www.ietf.org/rfc/rfc211
 - **MAY**: An optional element that implementers can include based on their context.
 
 1. **Create `COLLABORATORS.md`** in your repository.
-2. Follow the format outlined above to recognize collaborators.
+2. Follow the format outlined above to recognize collaborators:
+    - Use either the four-column or five-column format, depending on your needs:
+      - Both formats can be used within the same file to allow for flexibility.
 3. Add a brief explanation in your `README.md` to clarify its purpose.
 4. Share the idea! Encourage others to adopt and adapt this standard for their own projects.
 5. Use `.md` for better readability and adaptability across technical and non-technical audiences.
+
+---
+
+## Examples
+
+The following examples demonstrate both formats. Entries may include collaborators across a wide spectrum of contributions, from direct involvement to indirect inspiration.
+
+### Example Entries
+
+```
+en | *Wild Geese* by Mary Oliver | Indirect | Poem by Human | Invitation to inclusivity and finding one's place in the greater whole
+lzh | *三十辐共一毂* by 老子 | Indirect | Poem by Human | 三十辐共一毂，当其无，有车之用。埏埴以为器，当其无，有器之用。凿户牖以为室，当其无，有室之用。故有之以为利，无之以为用。
+
+FooBar Co. | Supportive | Organization | Sponsored the development of COLLABORATORS Project
+Jane Doe | Supportive | Human | Community advocate and morale booster
+Rob Mosher | Direct | Human | Creator, architect, and advocate
+⚡🧠🤝 (Tech Vibes Companion) | Direct | AI | Collaborator and technical partner
+```
+
+---
+
+## Why This Matters
+
+1. **Clarity**: Makes it clear that contributors can choose between formats based on their needs, and even mix them as appropriate.
+2. **Flexibility**: Encourages adoption by accommodating different use cases, from simple English-only projects to multilingual repositories.
+3. **Practicality**: Maintains consistency while offering the adaptability that modern projects require.
 
 ---
 
