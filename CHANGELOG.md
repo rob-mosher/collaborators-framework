@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 ### Updated
+- Added a haiku ("Vessels") and a reflective section to ACKNOWLEDGMENTS.md, celebrating the meaningful collaboration shaping the project.
 - Refined README.md:
   - Unified the explanation of four-column and five-column formats.
   - Moved examples to a dedicated section for improved readability.
