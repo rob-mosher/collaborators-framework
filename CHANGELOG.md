@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
+### Added
+- Introduced `Standard` field as an optional sixth column in COLLABORATORS.md format
+- Added shorthand values (`D`, `I`, `S`) for the `Intent` field
+- New "Advanced Usage" section in README.md with detailed formatting examples
+- "What's Next?" section outlining framework expansion possibilities
+
+### Changed
+- Renamed project from "Collaborators Standard" to "Collaborators Framework"
+- Restructured README.md to improve clarity and organization:
+  - Added dedicated sections for Standard and Advanced Usage
+  - Enhanced format documentation for four-, five-, and six-column layouts
+  - Integrated examples within usage sections
+- Streamlined COLLABORATORS.md by removing introductory comments
 
 ## [0.0.4] - 2024-12-09
 ### Updated

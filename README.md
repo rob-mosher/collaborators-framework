@@ -1,6 +1,6 @@
-# Collaborators Standard
+# Collaborators Framework
 
-Welcome to the `Collaborators` repository! This project introduces `COLLABORATORS.md`, a simple and inclusive standard for recognizing contributions to projects in ways that go beyond traditional code contributions. 
+Welcome to the `Collaborators` Framework! This project introduces `COLLABORATORS.md`, a foundational part of the framework, offering a simple and inclusive standard for recognizing contributions in ways that go beyond traditional code contributions.
 
 While `CONTRIBUTORS` files are common for tracking technical contributions, `COLLABORATORS.md` highlights **conceptual, creative, and non-traditional forms of collaboration** for both technical and non-technical projects. It recognizes that impactful contributions often transcend the boundaries of conventional roles.
 
@@ -15,34 +15,6 @@ The `COLLABORATORS.md` file is designed to:
 
 ---
 
-## Format
-
-The file is structured for clarity and simplicity. Two formats are supported, depending on the use case:
-
-```
-Name | Intent | Nature | Role/Contribution
-```
-
-or
-
-```
-Language | Name | Intent | Nature | Role/Contribution
-```
-
-- **Language** *(optional)*: The [ISO 639:2023](https://www.iso.org/standard/74575.html) code specifying the language or script of the collaborator’s entry (e.g., `en` for English, `zh` for Simplified Chinese). If omitted, the default is `en`.
-- **Name**: The identifying name or alias of the collaborator.
-- **Intent**: A controlled value describing the relationship, such as:
-    - `Indirect`: For inspirations or influences that shaped the project.
-    - `Supportive`: For collaborators providing critical support, such as:
-        - Morale or advocacy within a community.
-        - Financial sponsorship of development efforts.
-        - Logistical or infrastructural support.
-    - `Direct`: For collaborators actively and intentionally contributing to the project.
-- **Nature**: A brief description, such as "Human" or "AI."
-- **Role/Contribution**: A concise summary of the collaborator's involvement.
-
----
-
 ## Why `COLLABORATORS.md`?
 
 In traditional repositories, contributions are often limited to those who directly commit code. This standard expands the lens to include collaborators who:
@@ -54,38 +26,77 @@ By introducing `COLLABORATORS.md`, we aim to complement existing practices (like
 
 ---
 
-## How to Use
+## Format
 
-This specification uses keywords from [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt) to indicate requirements and recommendations:
-- **MUST**: A required element of the standard.
-- **SHOULD**: A recommended but optional element.
-- **MAY**: An optional element that implementers can include based on their context.
+The file is structured for clarity and simplicity. Supported formats include:
 
-1. **Create `COLLABORATORS.md`** in your repository.
-2. Follow the format outlined above to recognize collaborators:
-    - Use either the four-column or five-column format, depending on your needs:
-      - Both formats can be used within the same file to allow for flexibility.
-3. Add a brief explanation in your `README.md` to clarify its purpose.
-4. Share the idea! Encourage others to adopt and adapt this standard for their own projects.
-5. Use `.md` for better readability and adaptability across technical and non-technical audiences.
+### Four-Column Format
+```
+Name | Intent | Nature | Role/Contribution
+```
+
+### Five-Column Format *(Optional)*
+```
+Name | Intent | Nature | Role/Contribution | Language
+```
+
+### Six-Column Format *(Optional)*
+```
+Name | Intent | Nature | Role/Contribution | Language | Standard
+```
+
+- **Name**: The identifying name or alias of the collaborator.
+- **Intent**: A controlled value describing the relationship. Shorthand options (`I`, `S`, `D`) may be used:
+- **Nature**: A brief description, such as "Human" or "AI."
+- **Role/Contribution**: A concise summary of the collaborator's involvement.
+  - `Indirect` (I): For inspirations or influences that shaped the project.
+  - `Supportive` (S): For collaborators providing critical support, such as:
+      - Morale or advocacy within a community.
+      - Financial sponsorship of development efforts.
+      - Logistical or infrastructural support.
+  - `Direct` (D): For collaborators actively and intentionally contributing to the project.
+- **Language** *(optional)*: The [ISO 639:2023](https://www.iso.org/standard/74575.html) code specifying the language or script of the collaborator's entry (e.g., `en` for English, `zh` for Simplified Chinese). If omitted, the default is `en`.
+- **Standard** *(optional)*: Specify an additional standard for the entry (e.g., `binary` or `ISO` for structured formats).
 
 ---
 
-## Examples
+## How to Use
 
-The following examples demonstrate both formats. Entries may include collaborators across a wide spectrum of contributions, from direct involvement to indirect inspiration.
+### Standard Usage
+1. **Create Your `COLLABORATORS.md` File**:  
+   Begin by creating a new file named `COLLABORATORS.md` in your repository.  
 
-### Example Entries
+2. **Use the Four-Column Format**:  
+   ```
+   Name | Intent | Nature | Role/Contribution
+   ```
 
-```
-en | *Wild Geese* by Mary Oliver | Indirect | Poem by Human | Invitation to inclusivity and finding one's place in the greater whole
-lzh | *三十辐共一毂* by 老子 | Indirect | Poem by Human | 三十辐共一毂，当其无，有车之用。埏埴以为器，当其无，有器之用。凿户牖以为室，当其无，有室之用。故有之以为利，无之以为用。
+   **Example**:
+   ```
+   Jane Doe | Supportive | Human | Community advocate and morale booster
+   Rob Mosher | Direct | Human | Creator, architect, and advocate
+   ```
 
-FooBar Co. | Supportive | Organization | Sponsored the development of COLLABORATORS Project
-Jane Doe | Supportive | Human | Community advocate and morale booster
-Rob Mosher | Direct | Human | Creator, architect, and advocate
-⚡🧠🤝 (Tech Vibes Companion) | Direct | AI | Collaborator and technical partner
-```
+---
+
+### Advanced Usage
+1. **Leverage Multiple Formats**:  
+   Each line of your `COLLABORATORS.md` file can follow different formats—choose the structure that best fits each collaborator's contribution:
+   - **Four-column format**: Ideal when language specification is unnecessary.  
+   - **Five-column format**: Useful for multilingual or script-based entries.
+   - **Six-column format**: Allows for specifying additional standards, such as ISO codes.
+
+   **Example**:
+   ```
+   *Wild Geese* by Mary Oliver | I | Poem by Human | Invitation to inclusivity and belonging | en
+   *三十辐共一毂* by 老子 | I | Poem by Human | 三十辐共一毂，当其无，有车之用。 | lzh | ISO
+   FooBar Co. | S | Organization | Sponsored the development of COLLABORATORS Project
+   Rob Mosher | D | Human | Creator, architect, and advocate
+   ⚡🧠🤝 (Tech Vibes Companion) | Direct | AI | Collaborator and technical partner
+   ```
+
+2. **Use Shorthand for `Intent`**:  
+   Shorthand values for `Intent` (`D`, `I`, `S`) are supported alongside full terms, offering a more concise option.
 
 ---
 
@@ -104,6 +115,16 @@ We welcome feedback, suggestions, and contributions to improve the `COLLABORATOR
 - Fork the repository and submit a pull request.
 
 Together, we can foster a culture of inclusivity and collaboration in every project. 🌍🤝✨
+
+---
+
+## What's Next?
+
+The `Collaborators` Framework is designed to grow and evolve alongside your projects. Here are some ideas to expand its use:
+
+- **Custom Roles**: Introduce new roles tailored to your project's unique needs.
+- **Integration with Tools**: Explore ways to integrate `COLLABORATORS.md` with your CI/CD pipeline or documentation workflows.
+- **Community Engagement**: Share your implementation with the community to inspire others and refine the framework collectively.
 
 ---
 
