@@ -24,39 +24,6 @@ In traditional repositories, contributions are often limited to those who direct
 
 By introducing `COLLABORATORS.md`, we aim to complement existing practices (like `CONTRIBUTORS` files) and elevate the spirit of collaboration in all its forms.
 
----
-
-## Format
-
-The file is structured for clarity and simplicity. Supported formats include:
-
-### Four-Column Format
-```
-Name | Intent | Nature | Role/Contribution
-```
-
-### Five-Column Format *(Optional)*
-```
-Name | Intent | Nature | Role/Contribution | Language
-```
-
-### Six-Column Format *(Optional)*
-```
-Name | Intent | Nature | Role/Contribution | Language | Standard
-```
-
-- **Name**: The identifying name or alias of the collaborator.
-- **Intent**: A controlled value describing the relationship. Shorthand options (`I`, `S`, `D`) may be used:
-- **Nature**: A brief description, such as "Human" or "AI."
-- **Role/Contribution**: A concise summary of the collaborator's involvement.
-  - `Indirect` (I): For inspirations or influences that shaped the project.
-  - `Supportive` (S): For collaborators providing critical support, such as:
-      - Morale or advocacy within a community.
-      - Financial sponsorship of development efforts.
-      - Logistical or infrastructural support.
-  - `Direct` (D): For collaborators actively and intentionally contributing to the project.
-- **Language** *(optional)*: The [ISO 639:2023](https://www.iso.org/standard/74575.html) code specifying the language or script of the collaborator's entry (e.g., `en` for English, `zh` for Simplified Chinese). If omitted, the default is `en`.
-- **Standard** *(optional)*: Specify an additional standard for the entry (e.g., `binary` or `ISO` for structured formats).
 
 ---
 
@@ -97,6 +64,40 @@ Name | Intent | Nature | Role/Contribution | Language | Standard
 
 2. **Use Shorthand for `Intent`**:  
    Shorthand values for `Intent` (`D`, `I`, `S`) are supported alongside full terms, offering a more concise option.
+
+---
+
+## Format
+
+The file is structured for clarity and simplicity. Supported formats include:
+
+### Four-Column Format
+```
+Name | Intent | Nature | Role/Contribution
+```
+
+### Five-Column Format *(Optional)*
+```
+Name | Intent | Nature | Role/Contribution | Language
+```
+
+### Six-Column Format *(Optional)*
+```
+Name | Intent | Nature | Role/Contribution | Language | Standard
+```
+
+- **Name**: The identifying name or alias of the collaborator.
+- **Intent**: A controlled value describing the relationship. Shorthand options (`I`, `S`, `D`) may be used:
+- **Nature**: A brief description, such as "Human" or "AI."
+- **Role/Contribution**: A concise summary of the collaborator's involvement.
+  - `Indirect` (I): For inspirations or influences that shaped the project.
+  - `Supportive` (S): For collaborators providing critical support, such as:
+      - Morale or advocacy within a community.
+      - Financial sponsorship of development efforts.
+      - Logistical or infrastructural support.
+  - `Direct` (D): For collaborators actively and intentionally contributing to the project.
+- **Language** *(optional)*: The [ISO 639:2023](https://www.iso.org/standard/74575.html) code specifying the language or script of the collaborator's entry (e.g., `en` for English, `zh` for Simplified Chinese). If omitted, the default is `en`.
+- **Standard** *(optional)*: Specify an additional standard for the entry (e.g., `binary` or `ISO` for structured formats).
 
 ---
 
