@@ -57,9 +57,11 @@ By introducing `COLLABORATORS.md`, we aim to complement existing practices (like
    ```
    *Wild Geese* by Mary Oliver | I | Poem by Human | Invitation to inclusivity and belonging | en
    *三十辐共一毂* by 老子 | I | Poem by Human | 三十辐共一毂，当其无，有车之用。 | lzh | ISO
+
    FooBar Co. | S | Organization | Sponsored the development of COLLABORATORS Project
-   Rob Mosher | D | Human | Creator, architect, and advocate
-   ⚡🧠🤝 (Tech Vibes Companion) | Direct | AI | Collaborator and technical partner
+
+   Rob Mosher | Direct | Human | Creator, architect, and advocate
+   ⚡🧠🤝 (Tech Vibes Companion) | D | AI | Collaborator and technical partner
    ```
 
 2. **Use Shorthand for `Intent`**:  
@@ -88,14 +90,14 @@ Name | Intent | Nature | Role/Contribution | Language | Standard
 
 - **Name**: The identifying name or alias of the collaborator.
 - **Intent**: A controlled value describing the relationship. Shorthand options (`I`, `S`, `D`) may be used:
-- **Nature**: A brief description, such as "Human" or "AI."
-- **Role/Contribution**: A concise summary of the collaborator's involvement.
   - `Indirect` (I): For inspirations or influences that shaped the project.
   - `Supportive` (S): For collaborators providing critical support, such as:
       - Morale or advocacy within a community.
       - Financial sponsorship of development efforts.
       - Logistical or infrastructural support.
   - `Direct` (D): For collaborators actively and intentionally contributing to the project.
+- **Nature**: A brief description, such as "Human" or "AI."
+- **Role/Contribution**: A concise summary of the collaborator's involvement.
 - **Language** *(optional)*: The [ISO 639:2023](https://www.iso.org/standard/74575.html) code specifying the language or script of the collaborator's entry (e.g., `en` for English, `zh` for Simplified Chinese). If omitted, the default is `en`.
 - **Standard** *(optional)*: Specify an additional standard for the entry (e.g., `binary` or `ISO` for structured formats).
 
