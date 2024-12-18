@@ -15,9 +15,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Improved formatting consistency in examples and field descriptions
 - Reorganized format documentation to prioritize Direct contributions and improve readability
 - Streamlined README.md by removing redundant "Why This Matters" section
+- Renamed "What's Next?" to "Future Enhancements" with expanded roadmap items
+- Enhanced future enhancements section with specific examples and implementation ideas
 
 ### Fixed
 - Corrected placement of Intent options (I/S/D) in field descriptions
+- Fixed formatting in Field Definitions heading
+- Removed redundant horizontal rule in Advanced Usage section
 
 ## [0.0.5] - 2024-12-12
 ### Added
