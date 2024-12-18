@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 - Added documentation for commit message Collaborator tagging, including format, examples, and best practices
 - Added `.gitignore` and `.cursorignore` to exclude temporary git-related files (*.patch, *.diff, *.orig, *.rej)
+- Added `.cursorrules` to establish inclusive AI collaboration guidelines within Cursor IDE
 
 ### Changed
 - Reordered sections in README.md: Moved "How to Use" ahead of "Format" to improve onboarding by demonstrating usage first.
