@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Added documentation for commit message Collaborator tagging, including format, examples, and best practices
+- Added `.gitignore` and `.cursorignore` to exclude temporary git-related files (*.patch, *.diff, *.orig, *.rej)
+
 ### Changed
 - Reordered sections in README.md: Moved "How to Use" ahead of "Format" to improve onboarding by demonstrating usage first.
 - Improved formatting consistency in examples and field descriptions
@@ -14,9 +18,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 - Corrected placement of Intent options (I/S/D) in field descriptions
-
-### Added
-- Added `.gitignore` and `.cursorignore` to exclude temporary git-related files (*.patch, *.diff, *.orig, *.rej)
 
 ## [0.0.5] - 2024-12-12
 ### Added

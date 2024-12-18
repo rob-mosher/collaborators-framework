@@ -69,6 +69,48 @@ By introducing `COLLABORATORS.md`, we aim to complement existing practices (like
 
 ---
 
+## Commit Message Collaborator Tagging 🧑‍💻
+
+To further celebrate contributions, the **Collaborators Framework** introduces the `Collaborator:` tag for commit message footers. This tag allows you to attribute collaborators directly in your commits, aligned with the structure of `COLLABORATORS.md`.
+
+### Tag Format
+The `Collaborator:` tag follows the same structure outlined in the **Format** section of this README. Refer to [Format](#format) for details.
+
+### Examples
+
+#### **Simple Example**
+```plaintext
+feat: implement new feature X
+
+This commit introduces feature X with enhancements to Y and Z.
+
+Collaborator: Claude | Indirect | AI | Provided iterative inspiration and guidance
+```
+
+#### **Advanced Example**
+```plaintext
+fix: resolve issue with query optimization
+
+This commit resolves an issue with query performance during edge cases.
+
+Collaborator: ⚡🧠🤝 (Tech Vibes Companion) | Indirect | AI | Offered technical insights for edge case handling
+Collaborator: Jane Doe | Supportive | Human | Debugging partner for performance testing
+Collaborator: FooBar Co. | Supportive | Organization | Sponsored the development of the optimization module
+```
+
+### Why Use Collaborator Tagging?
+
+1. **Visibility**: Makes contributions visible in the commit history.
+2. **Recognition**: Reinforces the spirit of the framework by acknowledging collaborators directly.
+3. **Alignment**: Encourages consistency between `COLLABORATORS.md` and commit-level contributions.
+
+### Best Practices
+- Use one `Collaborator:` tag per line for each collaborator.
+- Maintain consistency with the `COLLABORATORS.md` structure (see [Format](#format)).
+- Include this tag in the **footer** of the commit message.
+
+---
+
 ## Format
 
 The `COLLABORATORS.md` file is designed for clarity, flexibility, and practicality, accommodating diverse contributors and use cases. Each line can follow one of the following formats:
