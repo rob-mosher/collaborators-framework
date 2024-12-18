@@ -1,0 +1,5 @@
+# Git related temporary files
+*.patch
+*.diff
+*.orig
+*.rej

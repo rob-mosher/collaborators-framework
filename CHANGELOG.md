@@ -15,6 +15,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 - Corrected placement of Intent options (I/S/D) in field descriptions
 
+### Added
+- Added `.gitignore` and `.cursorignore` to exclude temporary git-related files (*.patch, *.diff, *.orig, *.rej)
+
 ## [0.0.5] - 2024-12-12
 ### Added
 - Introduced `Standard` field as an optional sixth column in COLLABORATORS.md format
