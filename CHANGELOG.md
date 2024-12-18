@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.0.6] - 2024-12-18
 ### Added
 - Added documentation for commit message Collaborator tagging, including format, examples, and best practices
 - Added `.gitignore` and `.cursorignore` to exclude temporary git-related files (*.patch, *.diff, *.orig, *.rej)
