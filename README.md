@@ -4,16 +4,12 @@ Welcome to the `Collaborators` Framework! This project introduces `COLLABORATORS
 
 While `CONTRIBUTORS` files are common for tracking technical contributions, `COLLABORATORS.md` highlights **conceptual, creative, and non-traditional forms of collaboration** for both technical and non-technical projects. It recognizes that impactful contributions often transcend the boundaries of conventional roles.
 
----
-
 ## Purpose
 
 The `COLLABORATORS.md` file is designed to:
 - **Acknowledge Diverse Contributions**: Celebrate the input of all entities—human, AI, or beyond—that shape a project, including indirect inspirations.
 - **Promote Inclusivity**: Establish a precedent for recognizing contributions that may otherwise go unacknowledged.
 - **Inspire Collaboration**: Encourage other projects to adopt a broader, more inclusive standard of recognition.
-
----
 
 ## Why `COLLABORATORS.md`?
 
@@ -23,9 +19,6 @@ In traditional repositories, contributions are often limited to those who direct
 - Participate as non-human entities, such as artificial intelligence.
 
 By introducing `COLLABORATORS.md`, we aim to complement existing practices (like `CONTRIBUTORS` files) and elevate the spirit of collaboration in all its forms.
-
-
----
 
 ## How to Use
 
@@ -64,8 +57,6 @@ By introducing `COLLABORATORS.md`, we aim to complement existing practices (like
 
 2. **Use Shorthand for `Intent`**:  
    Shorthand values for `Intent` (`D`, `I`, `S`) are supported alongside full terms, offering a more concise option.
-
----
 
 ## Commit Message Collaborator Tagging 🧑‍💻
 
@@ -107,8 +98,6 @@ Collaborator: FooBar Co. | Supportive | Organization | Sponsored the development
 - Maintain consistency with the `COLLABORATORS.md` structure (see [Format](#format)).
 - Include this tag in the **footer** of the commit message.
 
----
-
 ## Format
 
 The `COLLABORATORS.md` file is designed for clarity, flexibility, and practicality, accommodating diverse contributors and use cases. Each line can follow one of the following formats:
@@ -141,8 +130,6 @@ Name | Intent | Nature | Role/Contribution | Language | Standard
 
 By supporting multiple formats within the same file, `COLLABORATORS.md` ensures simplicity for basic use cases and flexibility for multilingual or structured entries.
 
----
-
 ## Get Involved
 
 We welcome feedback, suggestions, and contributions to improve the `COLLABORATORS.md` standard. Feel free to:
@@ -150,8 +137,6 @@ We welcome feedback, suggestions, and contributions to improve the `COLLABORATOR
 - Fork the repository and submit a pull request.
 
 Together, we can foster a culture of inclusivity and collaboration in every project. 🌍🤝✨
-
----
 
 ## Future Enhancements
 
@@ -162,8 +147,6 @@ The `Collaborators` Framework is designed to grow and evolve alongside your proj
 - **Templates for Adoption**: Create a "starter pack" with pre-built templates for `COLLABORATORS.md`, including examples for multilingual and advanced use cases.
 - **Community Engagement**: Build a gallery of real-world `COLLABORATORS.md` files to inspire others and demonstrate flexibility.
 - **Expanded Fields**: Introduce optional fields such as `Date` or `Version` to track contributions over time.
-
----
 
 ## License
 
