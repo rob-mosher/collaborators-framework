@@ -9,6 +9,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Changed
 - Reordered sections in README.md: Moved "How to Use" ahead of "Format" to improve onboarding by demonstrating usage first.
 - Improved formatting consistency in examples and field descriptions
+- Reorganized format documentation to prioritize Direct contributions and improve readability
+- Streamlined README.md by removing redundant "Why This Matters" section
 
 ### Fixed
 - Corrected placement of Intent options (I/S/D) in field descriptions
