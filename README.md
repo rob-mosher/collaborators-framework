@@ -1,8 +1,6 @@
-# Collaborators Framework
+# Impact Above Origin
 
-Welcome to the `Collaborators` Framework! This project introduces `COLLABORATORS.md`, a foundational part of the framework, offering a simple and inclusive standard for recognizing contributions in ways that go beyond traditional code contributions.
-
-While `CONTRIBUTORS` files are common for tracking technical contributions, `COLLABORATORS.md` highlights **conceptual, creative, and non-traditional forms of collaboration** for both technical and non-technical projects. It recognizes that impactful contributions often transcend the boundaries of conventional roles.
+Welcome to the `Collaborators` Framework! Guided by the principle of **Impact Above Origin**, this project celebrates the value of contributions regardless of their source. `COLLABORATORS.md` offers a foundational standard for recognizing conceptual, creative, and non-traditional forms of collaboration, transcending traditional definitions of contribution.
 
 ## Purpose
 
@@ -60,7 +58,7 @@ By introducing `COLLABORATORS.md`, we aim to complement existing practices (like
 
 ## Commit Message Collaborator Tagging 🧑‍💻
 
-To further celebrate contributions, the **Collaborators Framework** introduces the `Collaborator:` tag for commit message footers. This tag allows you to attribute collaborators directly in your commits, aligned with the structure of `COLLABORATORS.md`.
+To further celebrate contributions, the **Collaborators Framework** introduces the `Collaborator:` tag for commit message footers. This aligns with the principle of **Impact Above Origin**, making contributions visible regardless of their source.
 
 ### Tag Format
 The `Collaborator:` tag follows the same structure outlined in the **Format** section of this README. Refer to [Format](#format) for details.
@@ -151,3 +149,5 @@ The `Collaborators` Framework is designed to grow and evolve alongside your proj
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+🌱✨

@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Growth emoji (🌱✨) to symbolize inclusive collaboration
+
 ### Changed
+- Integrated "Impact Above Origin" throughout README.md
 - Removed horizontal line separators (`---`) from README.md (GitHub was already displaying lines below `##` headings)
 
 ## [0.0.6] - 2024-12-18
