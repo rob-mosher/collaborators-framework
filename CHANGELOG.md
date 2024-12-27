@@ -13,6 +13,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Changed
 
 - Updated changelog formatting to align with Keep a Changelog standard spacing guidelines
+- Added language identifiers to code blocks in README.md
+- Fixed list indentation in "Voices of Collaboration" section in README.md
 
 ## [0.1.0] - 2024-12-19
 

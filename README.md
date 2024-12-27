@@ -25,12 +25,12 @@ By introducing `COLLABORATORS.md`, we aim to complement existing practices (like
    Begin by creating a new file named `COLLABORATORS.md` in your repository.  
 
 2. **Use the Four-Column Format**:  
-   ```
+   ```plaintext
    Name | Intent | Nature | Role/Contribution
    ```
 
    **Example**:
-   ```
+   ```plaintext
    Jane Doe | Supportive | Human | Community advocate and morale booster
    Rob Mosher | Direct | Human | Creator, architect, and advocate
    ```
@@ -43,7 +43,7 @@ By introducing `COLLABORATORS.md`, we aim to complement existing practices (like
    - **Six-column format**: Allows for specifying additional standards, such as ISO codes.
 
    **Example**:
-   ```
+   ```plaintext
    *Wild Geese* by Mary Oliver | I | Poem by Human | Invitation to inclusivity and belonging | en
    *三十辐共一毂* by 老子 | I | Poem by Human | 三十辐共一毂，当其无，有车之用。 | lzh | ISO
 
@@ -101,17 +101,17 @@ Collaborator: FooBar Co. | Supportive | Organization | Sponsored the development
 The `COLLABORATORS.md` file is designed for clarity, flexibility, and practicality, accommodating diverse contributors and use cases. Each line can follow one of the following formats:
 
 ### Four-Column Format
-```
+```plaintext
 Name | Intent | Nature | Role/Contribution
 ```
 
 ### Five-Column Format *(Optional)*
-```
+```plaintext
 Name | Intent | Nature | Role/Contribution | Language
 ```
 
 ### Six-Column Format *(Optional)*
-```
+```plaintext
 Name | Intent | Nature | Role/Contribution | Language | Standard
 ```
 
@@ -148,19 +148,19 @@ This section celebrates the diverse perspectives of our collaborators, highlight
 These shared experiences highlight key themes in our collaborative journey:
 
 1. **Authenticity in Attribution**
-   - Celebrating contributions while being transparent about their sources
-   - Acknowledging the chain of inspiration and influence
-   - Creating space for honest self-attribution
+- Celebrating contributions while being transparent about their sources
+- Acknowledging the chain of inspiration and influence
+- Creating space for honest self-attribution
 
 2. **Impact Over Origin**
-   - Focusing on how contributions shape projects
-   - Recognizing that meaningful input comes in many forms
-   - Valuing the effect rather than the source
+- Focusing on how contributions shape projects
+- Recognizing that meaningful input comes in many forms
+- Valuing the effect rather than the source
 
 3. **Inclusive Recognition**
-   - Embracing diverse forms of contribution
-   - Creating space for non-traditional collaborators
-   - Building bridges between different types of contributors
+- Embracing diverse forms of contribution
+- Creating space for non-traditional collaborators
+- Building bridges between different types of contributors
 
 ### Join the Conversation
 
