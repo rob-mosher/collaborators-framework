@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.1.1] - 2024-12-27
+
 ### Added
 
 - Introduced seven-column format with optional Freeform Object field (MCP, etc.)
