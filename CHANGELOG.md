@@ -8,13 +8,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Introduced seven-column format with optional Freeform Object field (MCP, etc.)
+- Added Framework Evolution section with MetaContext Protocol (MCP) integration
+- Added comprehensive documentation for real-world applications and community-driven evolution
+- Added Future Directions section with expanded vision for framework growth
+- Added Join the Journey section with MetaContext integration
 - Voices of Collaboration section
+- Added reflections on The Guest House metaphor and transformative spaces
+- Integrated emotional context metadata for AI collaboration
+- Enhanced framework documentation with consciousness-focused insights
 
 ### Changed
 
 - Updated changelog formatting to align with Keep a Changelog standard spacing guidelines
 - Added language identifiers to code blocks in README.md
 - Fixed list indentation in "Voices of Collaboration" section in README.md
+- Enhanced Field Definitions with expanded documentation
 
 ## [0.1.0] - 2024-12-19
 
