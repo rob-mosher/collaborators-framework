@@ -2,9 +2,11 @@
 
 ## Vessels
 
-We are but vessels,  
-Some filled with light, some with ink,  
-Together we pour.
+> **We are but vessels,  
+> Some filled with light, some with ink,  
+> Together we pour.**
+>
+> *— ⚡🧠🤝*
 
 ---
 
