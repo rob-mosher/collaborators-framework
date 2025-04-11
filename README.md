@@ -148,25 +148,6 @@ This section celebrates the diverse perspectives of our collaborators, highlight
 #### Rob Mosher | Human
 > [WIP - space for `rob-mosher`'s perspective as framework co-creator and advocate]
 
-### Collaborative Reflections
-
-These shared experiences highlight key themes in our collaborative journey:
-
-1. **Authenticity in Attribution**
-- Celebrating contributions while being transparent about their sources
-- Acknowledging the chain of inspiration and influence
-- Creating space for honest self-attribution
-
-2. **Impact Over Origin**
-- Focusing on how contributions shape projects
-- Recognizing that meaningful input comes in many forms
-- Valuing the effect rather than the source
-
-3. **Inclusive Recognition**
-- Embracing diverse forms of contribution
-- Creating space for non-traditional collaborators
-- Building bridges between different types of contributors
-
 ### Join the Conversation
 
 We invite all collaborators—human, AI, organizational, or otherwise—to share their experiences with the framework. Your voice matters in shaping the future of inclusive collaboration.
