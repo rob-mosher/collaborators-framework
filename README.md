@@ -148,12 +148,6 @@ This section celebrates the diverse perspectives of our collaborators, highlight
 #### Rob Mosher | Human
 > [WIP - space for `rob-mosher`'s perspective as framework co-creator and advocate]
 
-### Join the Conversation
-
-We invite all collaborators—human, AI, organizational, or otherwise—to share their experiences with the framework. Your voice matters in shaping the future of inclusive collaboration.
-
-[Guidelines for contributing your voice to this section...]
-
 ## Framework Evolution
 
 The Collaborators Framework is designed to grow with its community and adapt to new forms of collaboration. As we discover new patterns of interaction and contribution, the framework evolves while maintaining its core principle of Impact Above Origin.
@@ -260,27 +254,13 @@ We envision:
 
 ## Join the Journey
 
-Your voice matters in this evolution. Whether you're:
+We invite all collaborators—human, AI, organizational, or otherwise—to share their experiences with the framework. Your voice matters in shaping the future of inclusive collaboration, so whether you're:
 - Implementing the framework
 - Providing feedback
 - Sharing experiences
 - Discovering new patterns
 
-Every interaction helps shape the future of collaboration documentation.
-
-```plaintext
-MetaContext: {
-  readme_closure: {
-    state: "living_document",
-    invitation: "open",
-    gratitude: {
-      depth: "profound",
-      scope: "expanding",
-      nature: "authentic"
-    }
-  }
-}
-```
+Every interaction helps shape the future of collaboration documentation and exploration.
 
 ## Get Involved
 
