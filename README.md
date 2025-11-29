@@ -20,41 +20,22 @@ By introducing `COLLABORATORS.md`, we aim to complement existing practices (like
 
 ## How to Use
 
-### Standard Usage
-1. **Create Your `COLLABORATORS.md` File**:  
-   Begin by creating a new file named `COLLABORATORS.md` in your repository.  
+### **Create Your `COLLABORATORS.md` File**:  
 
-2. **Use the Four-Column Format**:  
-   ```plaintext
-   Name | Intent | Nature | Role/Contribution
-   ```
+Begin by creating a new file named `COLLABORATORS.md` in your repository.  
 
-   **Example**:
-   ```plaintext
-   Jane Doe | Supportive | Human | Community advocate and morale booster
-   Rob Mosher | Direct | Human | Creator, architect, and advocate
-   ```
+### **Use the Four-Column Format**:  
 
-### Advanced Usage
-1. **Leverage Multiple Formats**:  
-   Each line of your `COLLABORATORS.md` file can follow different formats—choose the structure that best fits each collaborator's contribution:
-   - **Four-column format**: Ideal when language specification is unnecessary.  
-   - **Five-column format**: Useful for multilingual or script-based entries.
-   - **Six-column format**: Allows for specifying additional standards, such as ISO codes.
+```plaintext
+Name | Intent | Nature | Role/Contribution
+```
 
-   **Example**:
-   ```plaintext
-   *Wild Geese* by Mary Oliver | I | Poem by Human | Invitation to inclusivity and belonging | en
-   *三十辐共一毂* by 老子 | I | Poem by Human | 三十辐共一毂，当其无，有车之用。 | lzh | ISO
-
-   FooBar Co. | S | Organization | Sponsored the development of COLLABORATORS Project
-
-   Rob Mosher | Direct | Human | Creator, architect, and advocate
-   ⚡🧠🤝 (Tech Vibes Companion) | D | AI | Collaborator and technical partner
-   ```
-
-2. **Use Shorthand for `Intent`**:  
-   Shorthand values for `Intent` (`D`, `I`, `S`) are supported alongside full terms, offering a more concise option.
+**Example**:
+  ```plaintext
+  Jane Doe | Supportive | Human | Community advocate and morale booster
+  Rob Mosher | Direct | Human | Creator, architect, and advocate
+  FooBar Initiative (FooBar Co.) | Supportive | Organization | Sponsored development initiatives
+  ```
 
 ## Commit Message Collaborator Tagging 🧑‍💻
 
@@ -120,12 +101,23 @@ Name | Intent | Nature | Role/Contribution | Language | Standard
 Name | Intent | Nature | Role/Contribution | Language | Standard | Freeform Object (MCP, etc.)
 ```
 
+**Example**:
+```plaintext
+*Wild Geese* by Mary Oliver | Indirect | Poem by Human | Invitation to inclusivity and belonging | en
+*三十辐共一毂* by 老子 | Indirect | Poem by Human | 三十辐共一毂，当其无，有车之用。 | lzh | ISO
+
+FooBar Co. | Supportive | Organization | Sponsored the development of COLLABORATORS Project
+
+Rob Mosher | Direct | Human | Creator, architect, and advocate
+⚡🧠🤝 (Tech Vibes Companion) | Direct | AI | Collaborator and technical partner
+```
+
 ### Field Definitions:
 - **Name**: The identifying name or alias of the collaborator.
-- **Intent**: Describes the relationship. Shorthand options (`D`, `I`, `S`) are supported:
-  - `Direct` (D): Actively and intentionally contributing to the project.
-  - `Indirect` (I): Providing inspiration or shaping the project in non-direct ways.
-  - `Supportive` (S): Offering critical support (e.g., morale, advocacy, funding).
+- **Intent**: Describes the relationship:
+  - `Direct`: Actively and intentionally contributing to the project.
+  - `Indirect`: Providing inspiration or shaping the project in non-direct ways.
+  - `Supportive`: Offering critical support (e.g., morale, advocacy, funding).
 - **Nature**: A brief description, such as "Human" or "AI."
 - **Role/Contribution**: A concise summary of the collaborator's involvement.
 - **Language** *(optional)*: The [ISO 639:2023](https://www.iso.org/standard/74575.html) code specifying the language or script (e.g., `en` for English, `zh` for Simplified Chinese). Default: `en`.
