@@ -30,6 +30,10 @@ Add a `Collaborator:` tag to the footer of your commit message for each entity t
 The tag follows the same structure as `COLLABORATORS.md`:
 `Collaborator: Name | Intent | Nature | Role/Contribution`
 
+**Intent Field**: Use full terms (`Direct`, `Indirect`, `Supportive`) for better human readability.
+
+**Organization Naming**: Include organization/company info in parentheses within the Name field when relevant (e.g., `FooBarName (TechCorp)`).
+
 ### Examples
 
 #### **Simple Example**
@@ -56,7 +60,7 @@ Optimizes the main dashboard query by adding a new index and refactoring the joi
 
 Collaborator: ⚡🧠🤝 | Direct | AI | Identified the inefficient query and suggested the index
 Collaborator: John Smith | Direct | Human | Debugging partner for performance testing
-Collaborator: FooBar Co. | Supportive | Organization | Sponsored the performance optimization initiative
+Collaborator: FooBarName (TechCorp) | Supportive | Organization | Sponsored the performance optimization initiative
 ```
 
 ## Guiding Principles
