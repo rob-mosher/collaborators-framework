@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 - Simplify "Intent" field to only support long-form naming (D to Direct, etc)
+- To enhance public understanding and adoption, abstract naming for ⚡🧠🤝 to ChatGPT
 
 ### Changed
 

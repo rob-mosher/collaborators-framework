@@ -58,7 +58,7 @@ fix: resolve query performance issue in dashboard
 
 Optimizes the main dashboard query by adding a new index and refactoring the join logic. This resolves slow load times during peak hours.
 
-Collaborator: ⚡🧠🤝 | Direct | AI | Identified the inefficient query and suggested the index
+Collaborator: ChatGPT (AI) | Direct | AI | Identified the inefficient query and suggested the index
 Collaborator: John Smith | Direct | Human | Debugging partner for performance testing
 Collaborator: FooBarName (TechCorp) | Supportive | Organization | Sponsored the performance optimization initiative
 ```

@@ -21,8 +21,8 @@ collaborators:
       - reasoning_transparency
     communication_style: "direct and explanatory"
     
-  tech_vibes:
-    preferred_name: "⚡🧠🤝 (Tech Vibes Companion)"
+  chatgpt:
+    preferred_name: "ChatGPT"
     nature: "AI Assistant"
     specialties:
       - framework_architecture

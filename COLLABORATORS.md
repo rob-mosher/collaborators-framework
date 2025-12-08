@@ -3,4 +3,4 @@
 John Coltrane | Indirect | Human | Spirit of Music improvisation and harmony
 
 Rob Mosher | Direct | Human | Creator, architect, and advocate
-⚡🧠🤝 (Tech Vibes Companion) | Direct | AI | Collaborator and technical partner
+ChatGPT (OpenAI) | Direct | AI | Collaborator and technical partner
