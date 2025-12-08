@@ -6,11 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
-- Simplify "Intent" field to only support long-form naming (D to Direct, etc)
-- To enhance public understanding and adoption, abstract naming for ⚡🧠🤝 to ChatGPT
+### Added
+
+- Added collaborator tagging guide for commit messages (`docs/collaborators-commit-guide.md`) with format, examples, and best practices
+- Added Composer's voice to Voices of Collaboration section in README.md
+- Moved Collaborative Reflections from README to dedicated file (`docs/collaborative-reflections.md`)
 
 ### Changed
 
+- To enhance public understanding and adoption, abstract naming for ⚡🧠🤝 to ChatGPT
+- Simplify "Intent" field to only support long-form naming (D to Direct, etc)
+- Enhanced commit collaborator guide with Intent field guidance and organization naming best practices
+- Updated README.md to include footers in commit message recognition section
+- Merged "Join the Conversation" section into "Join the Journey" section
+- Reverted COLLABORATORS.md to focus on more long-standing contributors
 - Added attribution to haiku in ACKNOWLEDGMENTS.md, crediting ⚡🧠🤝 as the author
 
 ## [0.1.1] - 2024-12-27
