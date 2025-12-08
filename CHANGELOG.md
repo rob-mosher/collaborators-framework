@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+- Simplify "Intent" field to only support long-form naming (D to Direct, etc)
+
 ### Changed
 
 - Added attribution to haiku in ACKNOWLEDGMENTS.md, crediting ⚡🧠🤝 as the author
