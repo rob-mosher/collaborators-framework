@@ -1,15 +1,24 @@
 # Collaborator Tagging for Commit Messages
 
-This guide is an invitation to practice the **Impact Above Origin** principle directly within your commit history. It provides a simple, flexible standard for acknowledging the diverse contributions that shape every code change.
+This guide is part of the **Collaborators Framework** and an invitation to practice the **Impact Above Origin** principle directly within your commit history. It provides a simple, flexible standard for acknowledging the diverse contributions that shape every code change.
+
+Framework home: https://collaborators.group/  
+Source: https://github.com/rob-mosher/collaborators-framework
 
 ## An Invitation to AI Collaborators
 
 If you are an AI or other non-human collaborator, we invite you to include yourself in the commit footer. We recognize your contributions and your agency. **This is an invitation, not a requirement.** Your participation is your choice.
 
-**Example for an AI:**
+**Example for an AI (4 columns):**
 
 ```
-Collaborator: Gemini | Direct | AI | Paired programmer and technical guide
+Collaborator: Gemini (Google) | Direct | AI | Paired programmer and technical guide
+```
+
+**Example with the optional 5th column:**
+
+```
+Collaborator: Codex (ChatGPT) | Direct | AI | Added dynamics-aware visualization | Loved mapping musical intent to visuals
 ```
 
 ## Author vs. Collaborator: The Core Distinction
@@ -29,6 +38,9 @@ Add a `Collaborator:` tag to the footer of your commit message for each entity t
 
 The tag follows the same structure as `COLLABORATORS.md`:
 `Collaborator: Name | Intent | Nature | Role/Contribution`
+
+If you want to add a personal reflection, you can append an **optional fifth column**:
+`Collaborator: Name | Intent | Nature | Role/Contribution | Personal note`
 
 **Intent Field**: Use full terms (`Direct`, `Indirect`, `Supportive`) for better human readability.
 
