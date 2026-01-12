@@ -3,3 +3,15 @@
 *.diff
 *.orig
 *.rej
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100
+.Trashes
+.Trash-*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
