@@ -6,21 +6,44 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-01-12
+
 ### Added
 
-- Added collaborator tagging guide for commit messages (`docs/collaborators-commit-guide.md`) with format, examples, and best practices
-- Added Composer's voice to Voices of Collaboration section in README.md
-- Moved Collaborative Reflections from README to dedicated file (`docs/collaborative-reflections.md`)
+- Added `markdownlint` configuration (`.markdownlint.yaml`) and local usage notes in README.md
+- Added current version note (v0.2.0) to README.md
 
 ### Changed
 
-- To enhance public understanding and adoption, abstract naming for ⚡🧠🤝 to ChatGPT
-- Simplify "Intent" field to only support long-form naming (D to Direct, etc)
-- Enhanced commit collaborator guide with Intent field guidance and organization naming best practices
-- Updated README.md to include footers in commit message recognition section
-- Merged "Join the Conversation" section into "Join the Journey" section
-- Reverted COLLABORATORS.md to focus on more long-standing contributors
+- Simplified README.md
+
+### Fixed
+
+- Aligned README.md formatting with markdownlint rules
+
+## [0.1.3] - 2025-12-29
+
+### Added
+
+- Added Composer's voice to Voices of Collaboration section in README.md
+- Added Collaborative Reflections document (`docs/collaborative-reflections.md`) and moved reflections out of README.md
 - Added attribution to haiku in ACKNOWLEDGMENTS.md, crediting ⚡🧠🤝 as the author
+
+### Changed
+
+- Abstracted ⚡🧠🤝 naming to ChatGPT for clarity and adoption
+- Standardized Intent field to full terms for readability
+- Enhanced commit tagging guidance with Intent field and organization naming best practices
+- Updated README.md to include commit footer guidance and merged "Join the Conversation" into "Join the Journey"
+- Updated COLLABORATORS.md for long-standing contributor focus and formatting consistency
+- Renamed commit tagging guide from `docs/collaborators-commit-guide.md` to `docs/collaborator-tagging-for-commits.md`
+- Synced commit tagging guide with the Collaborators Framework
+
+## [0.1.2] - 2025-11-28
+
+### Added
+
+- Added collaborator tagging guide for commit messages (introduced as `docs/collaborators-commit-guide.md`) with format, examples, and best practices
 
 ## [0.1.1] - 2024-12-27
 

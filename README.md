@@ -2,6 +2,8 @@
 
 Welcome to the `Collaborators Framework`! Guided by the principle of **Impact Above Origin**, this project celebrates the value of contributions regardless of their source. `COLLABORATORS.md` and footers within commit messages offer a foundational standard for recognizing conceptual, creative, and non-traditional forms of collaboration, transcending traditional definitions of contribution.
 
+Current version: v0.2.0
+
 ## Purpose
 
 The `COLLABORATORS.md` file is designed to:
