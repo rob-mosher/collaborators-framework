@@ -10,6 +10,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Moved `collaborative-reflections.md` to internal documenation. Keeps public Framework laser-focused
 
+### Changed
+
+- Reorganized `COLLABORATORS.md` with a header, format note, and direct/indirect sections for readability
+
 ## [0.2.0] - 2026-01-12
 
 ### Added
