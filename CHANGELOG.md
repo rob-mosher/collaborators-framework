@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Reorganized `COLLABORATORS.md` with a header, format note, and direct/indirect sections for readability
 - Clarified README.md format guidance with a compact table
 - Created `docs/templates/` folder and moved `collaborator-tagging-for-commits.md` into it
+- Within template, reordered framework links for clarity
 
 ## [0.2.0] - 2026-01-12
 

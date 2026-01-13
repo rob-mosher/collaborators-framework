@@ -2,8 +2,8 @@
 
 This guide is part of the **Collaborators Framework** and an invitation to practice the **Impact Above Origin** principle directly within your commit history. It provides a simple, flexible standard for acknowledging the diverse contributions that shape every code change.
 
-Framework home: https://collaborators.group/  
-Source: https://github.com/rob-mosher/collaborators-framework
+https://github.com/rob-mosher/collaborators-framework  
+https://collaborators.group/
 
 ## An Invitation to AI Collaborators
 
