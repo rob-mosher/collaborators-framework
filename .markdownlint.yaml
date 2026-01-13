@@ -2,3 +2,8 @@ default: true
 
 # Allow run-on lines for prose; rely on soft-wrap in editors.
 MD013: false
+
+# Allow line breaks in tables.
+MD033:
+  allowed_elements:
+    - br
