@@ -84,18 +84,17 @@ Collaborator: FooBar Co. | Supportive | Organization | Sponsored the development
 
 ## Format
 
-The `COLLABORATORS.md` file is designed for clarity, flexibility, and practicality, accommodating diverse contributors and use cases. Each line can follow one of the following formats:
+The `COLLABORATORS.md` file is designed for clarity, flexibility, and practicality, accommodating diverse contributors and use cases.
 
-### Field Definitions
+`Name | Intent | Nature | Role/Contribution | Freeform (optional)`
 
-- **Name**: The identifying name or alias of the collaborator.
-- **Intent**: Describes the relationship:
-  - `Direct`: Actively and intentionally contributing to the project.
-  - `Indirect`: Providing inspiration or shaping the project in non-direct ways.
-  - `Supportive`: Offering critical support (e.g., morale, advocacy, funding).
-- **Nature**: A brief description, such as "Human", "AI", or "Poem".
-- **Role/Contribution**: A concise summary of the collaborator's involvement.
-- **Freeform**: *(optional)*
+| Field | Description |
+| --- | --- |
+| Name | Identifying name or alias of the collaborator |
+| Intent | `Direct`: active, intentional contribution<br>`Indirect`: inspiration or shaping without direct contribution<br>`Supportive`: enabling support (morale, advocacy, funding) |
+| Nature | Short descriptor (e.g., Human, AI, Organization, Poem) |
+| Role/Contribution | Concise summary of involvement |
+| Freeform | Optional personal note or context |
 
 ## Voices of Collaboration
 

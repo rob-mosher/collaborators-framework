@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Changed
 
 - Reorganized `COLLABORATORS.md` with a header, format note, and direct/indirect sections for readability
+- Clarified README.md format guidance with a compact table
 
 ## [0.2.0] - 2026-01-12
 
