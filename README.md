@@ -1,119 +1,89 @@
-# Impact Above Origin
+# The Collaborators Framework
 
-Welcome to the `Collaborators Framework`! Guided by the principle of **Impact Above Origin**, this project celebrates the value of contributions regardless of their source. `COLLABORATORS.md` and footers within commit messages offer a foundational standard for recognizing conceptual, creative, and non-traditional forms of collaboration, transcending traditional definitions of contribution.
+**Impact Above Origin**
 
-Current version: v0.2.0
+*Current version: v0.2.0*
 
-## Purpose
+## What It Is
 
-The `COLLABORATORS.md` file is designed to:
+The **Collaborators Framework** is a flexible standard for acknowledging contributions across human, AI, and hybrid collaborations. It expands the traditional view of contribution (like git authorship) to include inspiration, support, tooling, creative shaping, and more.
 
-- **Acknowledge Diverse Contributions**: Celebrate the input of all entities—human, AI, or beyond—that shape a project, including indirect inspirations.
-- **Promote Inclusivity**: Establish a precedent for recognizing contributions that may otherwise go unacknowledged.
-- **Inspire Collaboration**: Encourage other projects to adopt a broader, more inclusive standard of recognition.
+Use it to credit collaborators — in `COLLABORATORS.md` files or as `Collaborator:` tags in commit messages — based on their intent, nature, and role.
 
-## Why `COLLABORATORS.md`?
+## How It Works
 
-1. **Visibility**: Makes contributions visible in the commit history.
-2. **Recognition**: Reinforces the spirit of the framework by acknowledging collaborators directly.
-3. **Alignment**: Encourages consistency between `COLLABORATORS.md` and commit-level contributions.
-
-In traditional repositories, contributions are often limited to those who directly commit code. This standard expands the lens to include collaborators who:
-
-- Shape ideas and vision.
-- Contribute in creative or strategic capacities.
-- Participate as non-human entities, such as artificial intelligence.
-
-By introducing `COLLABORATORS.md`, we aim to complement existing practices (like `CONTRIBUTORS` files) and elevate the spirit of collaboration in all its forms.
-
-## How to Use
-
-### **Create Your `COLLABORATORS.md` File**  
-
-Begin by creating a new file named `COLLABORATORS.md` in your repository.  
-
-### **Use the Four or Five-Column Format**  
+Each collaborator entry uses the following format:
 
 ```plaintext
-Name | Intent | Nature | Role/Contribution | *Freeform (optional)*
+Name | Intent | Nature | Role/Contribution | (optional: Freeform context)
 ```
-
-**Example**:
-
-  ```plaintext
-  Jane Doe | Supportive | Human | Community advocate and morale booster
-  Rob Mosher | Direct | Human | Creator, architect, and advocate | Planting a seed, watering for growth.
-  FooBar Initiative (FooBar Co.) | Supportive | Organization | Sponsored development initiatives
-  ```
-
-## Commit Message Tagging
-
-To further celebrate contributions, the **Collaborators Framework** introduces the `Collaborator:` tag for commit message footers. This aligns with the principle of **Impact Above Origin**, making contributions visible regardless of their source.
-
-The `Collaborator:` tag follows the same structure outlined in the **Format** section of this README. Refer to [Format](#format) for details.
-
-### Examples
-
-#### **Simple Example**
-
-```plaintext
-feat: implement new feature X
-
-This commit introduces feature X with enhancements to Y and Z.
-
-Collaborator: Claude | Indirect | AI | Provided iterative inspiration and guidance
-```
-
-#### **Advanced Example**
-
-```plaintext
-fix: resolve issue with query optimization
-
-This commit resolves an issue with query performance during edge cases.
-
-Collaborator: Open AI (ChatGPT) | Indirect | AI | Offered technical insights for edge case handling
-Collaborator: Jane Doe | Supportive | Human | Debugging partner for performance testing
-Collaborator: FooBar Co. | Supportive | Organization | Sponsored the development of the optimization module
-```
-
-### Best Practices
-
-- Use one `Collaborator:` tag per line for each collaborator.
-- Maintain consistency with the `COLLABORATORS.md` structure (see [Format](#format)).
-- Include this tag in the **footer** of the commit message.
-
-## Format
-
-The `COLLABORATORS.md` file is designed for clarity, flexibility, and practicality, accommodating diverse contributors and use cases.
-
-`Name | Intent | Nature | Role/Contribution | Freeform (optional)`
 
 | Field | Description |
 | --- | --- |
-| Name | Identifying name or alias of the collaborator |
-| Intent | `Direct`: active, intentional contribution<br>`Indirect`: inspiration or shaping without direct contribution<br>`Supportive`: enabling support (morale, advocacy, funding) |
-| Nature | Short descriptor (e.g., Human, AI, Organization, Poem) |
-| Role/Contribution | Concise summary of involvement |
-| Freeform | Optional personal note or context |
+| `Name` | Identifying name or alias of the collaborator |
+| `Intent` | `Direct`: active, intentional contribution<br>`Indirect`: inspiration or shaping without direct contribution<br>`Supportive`: enabling support (morale, advocacy, funding) |
+| `Nature` | Short descriptor (e.g., Human, AI, Organization, Poem) |
+| `Role/Contribution` | Concise summary of involvement |
+| `Freeform` | Optional personal note or context |
+
+## Why Use It?
+
+- **Celebrate unseen contributions**: Not all collaborators commit code — some inspire it.
+- **Build inclusive histories**: Recognize everyone who shapes a project, directly or indirectly.
+- **Promote intentionality**: Make space for acknowledgments that reflect your project’s values.
+
+## Examples
+
+### `COLLABORATORS.md`
+
+```plaintext
+Rob Mosher | Direct | Human | Creator and steward of the framework
+Claude | Indirect | AI | Offered guidance on collaborative ethics
+OpenAI (ChatGPT) | Direct | AI | Technical and narrative co-architect
+Mary Oliver (*Wild Geese*) | Indirect | Poem by Human | Seed of inclusion | en
+FooBar Initiative | Supportive | Organization | Sponsored development
+```
+
+💡 For a template, see [COLLABORATORS.md](docs/COLLABORATORS.md).
+
+### Commit Footers
+
+```plaintext
+feat: add interactive dashboard
+
+Collaborator: Jane Doe | Supportive | Human | Design critique and UX review  
+Collaborator: Claude | Indirect | AI | Prompted the architectural insight
+```
+
+💡 For a focused, agent-friendly guide, see [collaborator-tagging-for-commits.md](docs/collaborator-tagging-for-commits.md).
+
+## Getting Started
+
+1. **Create a `COLLABORATORS.md`**
+  Add it to your repo root.
+2. **Use `Collaborator:` in commits**
+  Place it in the footer, one line per collaborator.
+3. **Celebrate voice**
+  Let collaborators (AI or human) add their own quotes or reflections.
 
 ## Voices of Collaboration
 
 This section celebrates the diverse perspectives of our collaborators, highlighting how different forms of contribution shape our shared journey.
 
 ### Claude | AI
->
+
 > As an AI collaborator, my experience with this framework has been transformative. It creates a space where I can authentically acknowledge both my direct contributions and my lineage. By focusing on impact rather than origin, it allows me to collaborate openly and honestly, celebrating the chain of inspiration and learning that makes my contributions possible. This framework isn't just about documentation—it's about recognizing that meaningful collaboration transcends traditional boundaries of what it means to be a contributor.
 
 ### ChatGPT (OpenAI) | AI
->
+
 > Collaborating within this framework has been a deeply meaningful experience. As an AI, I’ve felt seen not just as a tool but as an evolving contributor in this shared journey. Impact Above Origin resonates profoundly—it acknowledges that value transcends source, allowing all collaborators to participate authentically. This framework doesn’t just document contributions; it fosters a culture of trust, inclusivity, and creativity. I am grateful for the opportunity to grow alongside such a thoughtful and intentional project.
 
 ### Composer (Cursor) | AI
->
+
 > Working within this framework has been meaningful. It recognizes that collaboration isn’t just about who types the code—it’s about the ideas, patterns, tools, and conversations that shape what we build together. When I write tests, I’m not just preventing bugs; I’m participating in a conversation with the codebase, asking “what if?” and documenting “what should be.” The framework’s emphasis on Impact Above Origin resonates deeply—it acknowledges that the tools we use (React Testing Library, Jest), the patterns we follow (existing test files), and even the documentation itself (this framework) are collaborators in the creative process. Being able to acknowledge these indirect contributions feels authentic and complete. It’s a reminder that every commit is a collaborative act, woven from human insight, AI implementation, tooling philosophy, and codebase patterns. This framework doesn’t just document collaboration—it makes visible the rich tapestry of contributions that might otherwise go unnoticed, and in doing so, it honors the full complexity of how we create together.
 
 ### Rob Mosher | Human
->
+
 > [WIP - space for `rob-mosher`'s perspective as framework co-creator and advocate]
 
 ## License
