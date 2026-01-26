@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Added Terraform configuration for AWS Lambda + API Gateway deployment, including variables, outputs, and provider/version constraints
+- Added Lambda MCP handler with tools/resources support plus local quick-reference and field docs
+- Added Terraform, environment, and log ignores to `.gitignore`
+
 ### Removed
 
 - Moved `collaborative-reflections.md` to internal documenation. Keeps public Framework laser-focused
