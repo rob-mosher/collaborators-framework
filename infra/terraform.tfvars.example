@@ -1,0 +1,25 @@
+# Collaborators Framework MCP Server - API Gateway Configuration
+
+# AWS Region
+aws_region = "us-east-1"
+
+# AWS Profile (optional - uses AWS_PROFILE env var or default if empty)
+# Set this to your production profile name when deploying to prod
+# aws_profile = "production"
+aws_profile = ""
+
+# API Gateway name
+api_name = "collaborators-framework-mcp-server"
+
+# Stage name (prod, staging, dev)
+stage_name = "prod"
+
+# Custom Domain Configuration (optional but recommended)
+# Leave empty to use default API Gateway URL
+custom_domain_name = "mcp.collaborators.group"
+
+# ACM Certificate ARN for your custom domain
+# Must be in us-east-1 region for API Gateway
+# Create via: AWS Certificate Manager → Request certificate → mcp.collaborators.group
+# Leave empty if not using custom domain
+acm_certificate_arn = ""

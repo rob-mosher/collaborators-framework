@@ -30,6 +30,7 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
+/infra/lambda.zip
 
 # Environment variables
 .env

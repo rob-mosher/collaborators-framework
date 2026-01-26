@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Added Terraform configuration for AWS Lambda + API Gateway deployment, including variables, outputs, and provider/version constraints
 - Added Lambda MCP handler with tools/resources support plus local quick-reference and field docs
 - Added Terraform, environment, and log ignores to `.gitignore`
+- Added optional API Gateway custom domain resources and DNS-focused outputs for custom domains
 
 ### Removed
 
@@ -23,6 +24,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Clarified README.md format guidance with a compact table
 - Created `docs/templates/` folder and moved `collaborator-tagging-for-commits.md` into it
 - Within template, reordered framework links for clarity
+- Aligned Terraform variables with the sample tfvars, including optional AWS profile usage and configurable stage name
+- Updated default Lambda/API names to the Collaborators Framework MCP server
 
 ## [0.2.0] - 2026-01-12
 

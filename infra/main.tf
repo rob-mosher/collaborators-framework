@@ -1,5 +1,6 @@
 provider "aws" {
-  region = var.aws_region
+  region  = var.aws_region
+  profile = var.aws_profile != "" ? var.aws_profile : null
 }
 
 data "archive_file" "lambda_zip" {
@@ -66,8 +67,26 @@ resource "aws_apigatewayv2_route" "mcp" {
 
 resource "aws_apigatewayv2_stage" "mcp" {
   api_id      = aws_apigatewayv2_api.mcp.id
-  name        = "$default"
+  name        = var.stage_name
   auto_deploy = true
+}
+
+resource "aws_apigatewayv2_domain_name" "mcp" {
+  count       = var.custom_domain_name != "" && var.acm_certificate_arn != "" ? 1 : 0
+  domain_name = var.custom_domain_name
+
+  domain_name_configuration {
+    certificate_arn = var.acm_certificate_arn
+    endpoint_type   = "REGIONAL"
+    security_policy = "TLS_1_2"
+  }
+}
+
+resource "aws_apigatewayv2_api_mapping" "mcp" {
+  count       = var.custom_domain_name != "" && var.acm_certificate_arn != "" ? 1 : 0
+  api_id      = aws_apigatewayv2_api.mcp.id
+  domain_name = aws_apigatewayv2_domain_name.mcp[0].id
+  stage       = aws_apigatewayv2_stage.mcp.name
 }
 
 resource "aws_lambda_permission" "apigw" {
