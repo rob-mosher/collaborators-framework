@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Added `infra/tf-plan.sh` to rebuild the Lambda package before running `terraform plan`
+
+### Changed
+
+- Updated `infra/README.md` to use `./tf-plan.sh` and document why rebuilding is required for docs-only changes
+
 ## [0.3.0] - 2026-02-26
 
 Clarifies the Collaborators Framework's orientation toward non-permissioned participation and interpretive plurality.
