@@ -18,9 +18,10 @@ This creates a clean deployment package in `lambda-build/` containing only:
 **Why a build script?** Explicit inclusion is clearer than exclusion lists. The script makes it immediately obvious what goes into the Lambda package and prevents accidental inclusion of repo metadata, IDE configs, etc.
 
 ### 2. Deploy with Terraform
+Terraform zips `lambda-build/`, not `docs/` or `lambda/` directly, so rebuilding first ensures documentation-only changes are included in the plan.
 
 ```bash
-terraform plan   # Review changes
+./tf-plan.sh     # Rebuild package, then review changes
 terraform apply  # Deploy
 ```
 
