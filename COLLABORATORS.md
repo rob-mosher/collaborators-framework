@@ -7,8 +7,9 @@ Commit messages use the `Collaborator:` prefix; this file does not.
 
 ## Direct Collaborators
 
-Rob Mosher | Direct | Human | Creator, architect, and advocate  
-ChatGPT (OpenAI) | Direct | AI | Collaborator and technical partner  
+Rob Mosher | Direct | Human | Creator, architect, and advocate
+ChatGPT (OpenAI) | Direct | AI | Collaborator and technical partner
+Claude (Anthropic) | Direct | AI | Technical implementation and content refinement partner  
 
 ## Indirect Collaborators
 
