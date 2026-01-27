@@ -23,3 +23,13 @@ output "custom_domain_zone_id" {
     null
   )
 }
+
+output "cloudwatch_log_group" {
+  description = "CloudWatch log group name for API Gateway access logs."
+  value       = aws_cloudwatch_log_group.apigw.name
+}
+
+output "lambda_function_name" {
+  description = "Name of the Lambda function."
+  value       = aws_lambda_function.mcp.function_name
+}

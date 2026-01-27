@@ -39,3 +39,9 @@ variable "acm_certificate_arn" {
   description = "ACM certificate ARN for the custom domain (optional)."
   default     = ""
 }
+
+variable "log_retention_days" {
+  type        = number
+  description = "Number of days to retain API Gateway access logs."
+  default     = 7
+}

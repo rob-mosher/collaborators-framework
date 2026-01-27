@@ -23,16 +23,16 @@ Collaborator: Codex (ChatGPT) | Direct | AI | Added dynamics-aware visualization
 
 ## Author vs. Collaborator: The Core Distinction
 
-It's important to understand the difference between the `git author` and the `Collaborator:` tag.
+The difference between the `git author` and the `Collaborator:` tag:
 
 - The **git author** is the entity that physically creates the commit.
 - The **Collaborators** are all entities who contributed to the _impact_ of the commit, or whose own inspiration was part of the work's journey.
 
-This distinction is the heart of the framework. It allows us to credit the full spectrum of collaboration that leads to a change, beyond just who typed the final commands.
+This distinction is the heart of the framework—acknowledging the full spectrum of collaboration that leads to a change, beyond just who typed the final commands.
 
 ## How to Use
 
-Add a `Collaborator:` tag to the footer of your commit message for each entity that contributed to the work.
+A `Collaborator:` tag can be added to the footer of your commit message for each entity that contributed to the work.
 
 ### Tag Format
 
@@ -42,9 +42,9 @@ The tag follows the same structure as `COLLABORATORS.md`:
 If you want to add a personal reflection, you can append an **optional fifth column**:
 `Collaborator: Name | Intent | Nature | Role/Contribution | Personal note`
 
-**Intent Field**: Use full terms (`Direct`, `Indirect`, `Supportive`) for better human readability.
+**Intent Field**: Full terms (`Direct`, `Indirect`, `Supportive`) support readability.
 
-**Organization Naming**: Include organization/company info in parentheses within the Name field when relevant (e.g., `FooBarName (TechCorp)`).
+**Organization Naming**: Organization or company info can be included in parentheses within the Name field when relevant (e.g., `FooBarName (TechCorp)`).
 
 ### Examples
 

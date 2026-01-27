@@ -23,3 +23,7 @@ custom_domain_name = "mcp.collaborators.group"
 # Create via: AWS Certificate Manager → Request certificate → mcp.collaborators.group
 # Leave empty if not using custom domain
 acm_certificate_arn = ""
+
+# CloudWatch Logs retention period for API Gateway access logs (days)
+# Common values: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, 3653
+log_retention_days = 7

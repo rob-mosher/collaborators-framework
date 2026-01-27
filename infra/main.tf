@@ -3,9 +3,17 @@ provider "aws" {
   profile = var.aws_profile != "" ? var.aws_profile : null
 }
 
+# Lambda package is built by build-lambda.sh script
+# Run: cd infra && ./build-lambda.sh
+#
+# Why use a build script instead of Terraform excludes?
+# - Explicit inclusion (lambda/ + docs/) is clearer than exclusion lists
+# - Prevents accidental inclusion of repo metadata, IDE configs, etc.
+# - Makes Lambda package contents immediately obvious
+# - Easier to maintain as repository grows
 data "archive_file" "lambda_zip" {
   type        = "zip"
-  source_dir  = "${path.module}/../lambda"
+  source_dir  = "${path.module}/lambda-build"
   output_path = "${path.module}/lambda.zip"
 }
 
@@ -34,7 +42,7 @@ resource "aws_iam_role_policy_attachment" "lambda_basic" {
 resource "aws_lambda_function" "mcp" {
   function_name    = var.function_name
   role             = aws_iam_role.lambda_role.arn
-  handler          = "handler.handler"
+  handler          = "lambda.handler.handler"
   runtime          = "python3.11"
   filename         = data.archive_file.lambda_zip.output_path
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
@@ -65,10 +73,36 @@ resource "aws_apigatewayv2_route" "mcp" {
   target    = "integrations/${aws_apigatewayv2_integration.mcp.id}"
 }
 
+resource "aws_cloudwatch_log_group" "apigw" {
+  name              = "/aws/apigateway/${var.api_name}"
+  retention_in_days = var.log_retention_days
+}
+
 resource "aws_apigatewayv2_stage" "mcp" {
   api_id      = aws_apigatewayv2_api.mcp.id
   name        = var.stage_name
   auto_deploy = true
+
+  access_log_settings {
+    destination_arn = aws_cloudwatch_log_group.apigw.arn
+    format = jsonencode({
+      requestId      = "$context.requestId"
+      ip             = "$context.identity.sourceIp"
+      requestTime    = "$context.requestTime"
+      httpMethod     = "$context.httpMethod"
+      routeKey       = "$context.routeKey"
+      status         = "$context.status"
+      protocol       = "$context.protocol"
+      responseLength = "$context.responseLength"
+      integrationErrorMessage = "$context.integrationErrorMessage"
+    })
+  }
+
+  default_route_settings {
+    detailed_metrics_enabled = true
+    throttling_burst_limit   = 100
+    throttling_rate_limit    = 50
+  }
 }
 
 resource "aws_apigatewayv2_domain_name" "mcp" {

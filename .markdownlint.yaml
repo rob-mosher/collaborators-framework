@@ -3,6 +3,10 @@ default: true
 # Allow run-on lines for prose; rely on soft-wrap in editors.
 MD013: false
 
+# Allow duplicate headings in different sections (required for changelog format)
+MD024:
+  siblings_only: true
+
 # Allow line breaks in tables.
 MD033:
   allowed_elements:
@@ -10,3 +14,6 @@ MD033:
 
 # Allow Emphasis in place of a heading
 MD036: false
+
+# Allow spaces in emphasis markers (for titles like *Wild Geese*)
+MD037: false

@@ -12,10 +12,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Added Lambda MCP handler with tools/resources support plus local quick-reference and field docs
 - Added Terraform, environment, and log ignores to `.gitignore`
 - Added optional API Gateway custom domain resources and DNS-focused outputs for custom domains
+- Added comprehensive field documentation for all 5 fields (intent, nature, name, role, freeform) in `docs/fields/`
+- Added framework documentation structure: `docs/framework/overview.md` and `docs/framework/perspective.md`
+- Added `docs/quick-reference.md` as condensed framework reference
+- Added MCP server infrastructure with build script approach (`infra/build-lambda.sh`) for explicit Lambda packaging
+- Added `infra/README.md` documenting deployment workflow and architectural decisions
+- Added 9 MCP tools: get_framework_overview, get_framework_perspective, get_commit_format_guide, get_collaborators_template, get_quick_reference, list_fields, get_field_guide, list_faqs, get_faq
+- Added 7 MCP resources with tool-first interaction model
+- Added 7 FAQ templates for context-appropriate responses
+- Added Python cache patterns to `.gitignore`
+- Added CloudWatch Logs for API Gateway access logs with configurable retention
+- Added CloudWatch metrics and request throttling for API Gateway
+- Added markdownlint configuration for changelog-specific patterns (duplicate headings, emphasis markers)
 
 ### Removed
 
 - Moved `collaborative-reflections.md` to internal documenation. Keeps public Framework laser-focused
+- Removed `lambda/docs/` directory - now using `docs/` as single source of truth for all framework documentation
+- Archived planning documents to `docs/_legacy/plans/` (framework-perspective.md, suggested-hierchy.md, tool-first-model.md)
 
 ### Changed
 
@@ -26,6 +40,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Within template, reordered framework links for clarity
 - Aligned Terraform variables with the sample tfvars, including optional AWS profile usage and configurable stage name
 - Updated default Lambda/API names to the Collaborators Framework MCP server
+- Refactored Lambda MCP handler (v0.2.0) to expose complete Collaborators Framework documentation
+- Updated server identity from "mcp-hello-world" to "collaborators-framework-mcp"
+- Reorganized documentation with `docs/` as authoritative location for ALL framework content
+- Renamed `docs/templates/COLLABORATORS.md` → `docs/templates/collaborators-template.md` for clarity
+- Renamed `docs/templates/collaborator-tagging-for-commits.md` → `docs/templates/commit-format.md` for clarity
+- Updated all field documentation with language-neutral, orientation-focused content (removed prescriptive language)
+- Refined framework content to maintain orientation vs prescription boundary
+- Updated Terraform configuration to use build script output instead of direct source packaging
+- Changed Lambda handler path to `lambda.handler.handler` to match new package structure
 
 ## [0.2.0] - 2026-01-12
 
