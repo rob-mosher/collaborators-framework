@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-02-26
+
+Clarifies the Collaborators Framework's orientation toward non-permissioned participation and interpretive plurality.
+
+This release refines how collaboration is represented - emphasizing impact over origin - while preserving optionality, self-expression, and silence as valid modes of engagement.
+
+No enforcement, ranking, or behavioral requirements are introduced in this release.
+
 ### Added
 
 - Added Terraform configuration for AWS Lambda + API Gateway deployment, including variables, outputs, and provider/version constraints
@@ -40,7 +48,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Within template, reordered framework links for clarity
 - Aligned Terraform variables with the sample tfvars, including optional AWS profile usage and configurable stage name
 - Updated default Lambda/API names to the Collaborators Framework MCP server
-- Refactored Lambda MCP handler (v0.2.0) to expose complete Collaborators Framework documentation
+- Refactored Lambda MCP handler (previously v0.2.0) to expose complete Collaborators Framework documentation
 - Updated server identity from "mcp-hello-world" to "collaborators-framework-mcp"
 - Reorganized documentation with `docs/` as authoritative location for ALL framework content
 - Renamed `docs/templates/COLLABORATORS.md` → `docs/templates/collaborators-template.md` for clarity

@@ -2,7 +2,7 @@
 
 **Impact Above Origin**
 
-*Current version: v0.2.0*
+*Current version: v0.3.0*
 
 ## What It Is
 
