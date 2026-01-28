@@ -5,7 +5,7 @@ PROTOCOL_VERSION = "2024-11-05"
 
 # Documentation paths (relative to Lambda working directory /var/task/)
 DOCS = {
-    "framework/overview": "docs/framework/overview.md",
+    "framework/README": "docs/framework/README.md",
     "framework/perspective": "docs/framework/perspective.md",
     "templates/commit-format": "docs/templates/commit-format.md",
     "templates/collaborators-template": "docs/templates/collaborators-template.md",
@@ -21,7 +21,7 @@ FIELD_DOCS = {
 }
 
 TOOLS = {
-    "get_framework_overview": "framework/overview",
+    "get_README": "framework/README",
     "get_framework_perspective": "framework/perspective",
     "get_commit_format_guide": "templates/commit-format",
     "get_collaborators_template": "templates/collaborators-template",
@@ -133,7 +133,7 @@ def _handle_request(payload):
         result = {
             "tools": [
                 {
-                    "name": "get_framework_overview",
+                    "name": "get_README",
                     "description": "Return the main Collaborators Framework documentation (Impact Above Origin principle, field definitions, examples).",
                     "inputSchema": {
                         "type": "object",
@@ -343,8 +343,8 @@ This FAQ functions as a clarification template. Use it to generate context-appro
         result = {
             "resources": [
                 {
-                    "uri": "collaborators://framework/overview",
-                    "name": "Framework Overview",
+                    "uri": "collaborators://framework/README",
+                    "name": "Framework README",
                     "description": "Main framework documentation with examples.",
                     "mimeType": "text/markdown",
                 },

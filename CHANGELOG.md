@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- (MCP) Renamed `get_framework_overview` to `get_README`
+
 ### Added
 
 - Added `infra/tf-plan.sh` to rebuild the Lambda package before running `terraform plan`

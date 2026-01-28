@@ -61,6 +61,6 @@ Contributions are understood in terms of how they shape outcomes, not where they
 
 ## Resources
 
-- Full documentation: `collaborators://framework/overview`
+- Full documentation: `collaborators://framework/README`
 - Commit guide: `collaborators://templates/commit-format`
 - Field details: `collaborators://field/{name}`
