@@ -19,7 +19,7 @@ stage_name = "prod"
 custom_domain_name = "mcp.collaborators.group"
 
 # ACM Certificate ARN for your custom domain
-# Must be in us-east-1 region for API Gateway
+# Must be in `aws_region` (above) for API Gateway
 # Create via: AWS Certificate Manager → Request certificate → mcp.collaborators.group
 # Leave empty if not using custom domain
 acm_certificate_arn = ""
