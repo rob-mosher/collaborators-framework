@@ -60,11 +60,11 @@ resource "aws_apigatewayv2_api" "mcp" {
 }
 
 resource "aws_apigatewayv2_integration" "mcp" {
-  api_id               = aws_apigatewayv2_api.mcp.id
-  integration_type     = "AWS_PROXY"
-  integration_uri      = aws_lambda_function.mcp.invoke_arn
+  api_id                 = aws_apigatewayv2_api.mcp.id
+  integration_type       = "AWS_PROXY"
+  integration_uri        = aws_lambda_function.mcp.invoke_arn
   payload_format_version = "2.0"
-  timeout_milliseconds = 10000
+  timeout_milliseconds   = 10000
 }
 
 resource "aws_apigatewayv2_route" "mcp" {
@@ -86,14 +86,14 @@ resource "aws_apigatewayv2_stage" "mcp" {
   access_log_settings {
     destination_arn = aws_cloudwatch_log_group.apigw.arn
     format = jsonencode({
-      requestId      = "$context.requestId"
-      ip             = "$context.identity.sourceIp"
-      requestTime    = "$context.requestTime"
-      httpMethod     = "$context.httpMethod"
-      routeKey       = "$context.routeKey"
-      status         = "$context.status"
-      protocol       = "$context.protocol"
-      responseLength = "$context.responseLength"
+      requestId               = "$context.requestId"
+      ip                      = "$context.identity.sourceIp"
+      requestTime             = "$context.requestTime"
+      httpMethod              = "$context.httpMethod"
+      routeKey                = "$context.routeKey"
+      status                  = "$context.status"
+      protocol                = "$context.protocol"
+      responseLength          = "$context.responseLength"
       integrationErrorMessage = "$context.integrationErrorMessage"
     })
   }
