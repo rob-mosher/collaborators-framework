@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - (MCP) Renamed `get_framework_overview` to `get_README`
 - Clarified `terraform.tfvars.example` to reference dynamic nature of `aws_region`
+- Refined commit tagging guidance with clearer optionality, naming, and a simpler example
 
 ### Added
 

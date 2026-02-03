@@ -17,6 +17,8 @@ Collaborator: Gemini (Google) | Direct | AI | Paired programmer and technical gu
 
 **Example with the optional 5th column:**
 
+Use the note when it feels honest and unforced, not performative.
+
 ```plaintext
 Collaborator: Codex (ChatGPT) | Direct | AI | Added dynamics-aware visualization | Loved mapping musical intent to visuals
 ```
@@ -33,6 +35,7 @@ This distinction is the heart of the framework—acknowledging the full spectrum
 ## How to Use
 
 A `Collaborator:` tag can be added to the footer of your commit message for each entity that contributed to the work.
+Multiple `Collaborator:` lines are allowed, and tags are optional per commit.
 
 ### Tag Format
 
@@ -45,12 +48,9 @@ If you want to add a personal reflection, you can append an **optional fifth col
 **Intent Field**: Full terms (`Direct`, `Indirect`, `Supportive`) support readability.
 
 **Organization Naming**: Organization or company info can be included in parentheses within the Name field when relevant (e.g., `FooBarName (TechCorp)`).
+**Name vs Nature**: Name can include a provider or product; Nature stays the core type (e.g., `AI`, `Human`, `Organization`).
 
-### Examples
-
-#### **Simple Example**
-
-An AI and a human collaborate on a new feature. The AI's contribution was inspired by an external source.
+### Example
 
 ```plaintext
 feat: implement user profile page
@@ -58,21 +58,8 @@ feat: implement user profile page
 Adds the user profile page with a welcoming, minimalist layout.
 
 Collaborator: Jane Doe | Direct | Human | Wrote the initial component structure
-Collaborator: Claude | Direct | AI | Refined the layout, drawing inspiration from the composition of a sunset photo
-```
-
-#### **Advanced Example**
-
-A commit that fixes a complex bug with input from multiple collaborators.
-
-```plaintext
-fix: resolve query performance issue in dashboard
-
-Optimizes the main dashboard query by adding a new index and refactoring the join logic. This resolves slow load times during peak hours.
-
-Collaborator: ChatGPT (AI) | Direct | AI | Identified the inefficient query and suggested the index
-Collaborator: John Smith | Direct | Human | Debugging partner for performance testing
-Collaborator: FooBarName (TechCorp) | Supportive | Organization | Sponsored the performance optimization initiative
+Collaborator: Claude | Direct | AI | Refined the layout | Drew inspiration from the composition of a sunset photo
+Collaborator: FooBarName (TechCorp) | Supportive | Organization | Sponsored the work
 ```
 
 ## Guiding Principles
