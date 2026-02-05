@@ -45,3 +45,9 @@ variable "log_retention_days" {
   description = "Number of days to retain API Gateway access logs."
   default     = 7
 }
+
+variable "disable_quick_reference" {
+  type        = bool
+  description = "Disable the quick reference tool/resource in the MCP server."
+  default     = false
+}

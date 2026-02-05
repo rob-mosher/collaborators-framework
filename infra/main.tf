@@ -46,6 +46,12 @@ resource "aws_lambda_function" "mcp" {
   runtime          = "python3.11"
   filename         = data.archive_file.lambda_zip.output_path
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
+
+  environment {
+    variables = {
+      DISABLE_QUICK_REFERENCE = var.disable_quick_reference ? "1" : "0"
+    }
+  }
 }
 
 resource "aws_apigatewayv2_api" "mcp" {
