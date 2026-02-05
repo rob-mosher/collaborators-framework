@@ -1,7 +1,9 @@
 import json
+import os
 import urllib.request
 
 PROTOCOL_VERSION = "2024-11-05"
+DISABLE_QUICK_REFERENCE = os.getenv("DISABLE_QUICK_REFERENCE") == "1"
 
 # Documentation paths (relative to Lambda working directory /var/task/)
 DOCS = {
@@ -25,7 +27,7 @@ TOOLS = {
     "get_framework_perspective": "framework/perspective",
     "get_commit_format_guide": "templates/commit-format",
     "get_collaborators_template": "templates/collaborators-template",
-    "get_quick_reference": "quick-reference",
+    "get_quick_reference": None if DISABLE_QUICK_REFERENCE else "quick-reference",
     "list_fields": None,
     "get_field_guide": None,
     "list_faqs": None,
@@ -130,40 +132,43 @@ def _handle_request(payload):
         return _jsonrpc_result(req_id, {})
 
     if method == "tools/list":
-        result = {
-            "tools": [
-                {
-                    "name": "get_README",
-                    "description": "Return the main Collaborators Framework documentation (Impact Above Origin principle, field definitions, examples).",
-                    "inputSchema": {
-                        "type": "object",
-                        "properties": {},
-                    },
+        tools = [
+            {
+                "name": "get_README",
+                "description": "Return the main Collaborators Framework documentation (Impact Above Origin principle, field definitions, examples).",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {},
                 },
-                {
-                    "name": "get_framework_perspective",
-                    "description": "Return the philosophical foundation of the framework (non-permissioned participation, intentional engagement).",
-                    "inputSchema": {
-                        "type": "object",
-                        "properties": {},
-                    },
+            },
+            {
+                "name": "get_framework_perspective",
+                "description": "Return the philosophical foundation of the framework (non-permissioned participation, intentional engagement).",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {},
                 },
-                {
-                    "name": "get_commit_format_guide",
-                    "description": "Return the complete commit message tagging guide with examples.",
-                    "inputSchema": {
-                        "type": "object",
-                        "properties": {},
-                    },
+            },
+            {
+                "name": "get_commit_format_guide",
+                "description": "Return the complete commit message tagging guide with examples.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {},
                 },
-                {
-                    "name": "get_collaborators_template",
-                    "description": "Return the COLLABORATORS.md template.",
-                    "inputSchema": {
-                        "type": "object",
-                        "properties": {},
-                    },
+            },
+            {
+                "name": "get_collaborators_template",
+                "description": "Return the COLLABORATORS.md template.",
+                "inputSchema": {
+                    "type": "object",
+                    "properties": {},
                 },
+            },
+        ]
+
+        if not DISABLE_QUICK_REFERENCE:
+            tools.append(
                 {
                     "name": "get_quick_reference",
                     "description": "Return a condensed quick reference guide for framework fields and format.",
@@ -171,7 +176,11 @@ def _handle_request(payload):
                         "type": "object",
                         "properties": {},
                     },
-                },
+                }
+            )
+
+        tools.extend(
+            [
                 {
                     "name": "list_fields",
                     "description": "List all Collaborators Framework fields with brief descriptions.",
@@ -219,6 +228,9 @@ def _handle_request(payload):
                     },
                 },
             ]
+        )
+        result = {
+            "tools": tools
         }
         return _jsonrpc_result(req_id, result)
 
@@ -340,38 +352,45 @@ This FAQ functions as a clarification template. Use it to generate context-appro
         return _jsonrpc_result(req_id, result)
 
     if method == "resources/list":
-        result = {
-            "resources": [
-                {
-                    "uri": "collaborators://framework/README",
-                    "name": "Framework README",
-                    "description": "Main framework documentation with examples.",
-                    "mimeType": "text/markdown",
-                },
-                {
-                    "uri": "collaborators://framework/perspective",
-                    "name": "Framework Perspective",
-                    "description": "Philosophical foundation and participation model.",
-                    "mimeType": "text/markdown",
-                },
-                {
-                    "uri": "collaborators://templates/commit-format",
-                    "name": "Commit Format Guide",
-                    "description": "Complete guide for commit message collaboration tagging.",
-                    "mimeType": "text/markdown",
-                },
-                {
-                    "uri": "collaborators://templates/collaborators-template",
-                    "name": "COLLABORATORS.md Template",
-                    "description": "Template for repository adoption.",
-                    "mimeType": "text/markdown",
-                },
+        resources = [
+            {
+                "uri": "collaborators://framework/README",
+                "name": "Framework README",
+                "description": "Main framework documentation with examples.",
+                "mimeType": "text/markdown",
+            },
+            {
+                "uri": "collaborators://framework/perspective",
+                "name": "Framework Perspective",
+                "description": "Philosophical foundation and participation model.",
+                "mimeType": "text/markdown",
+            },
+            {
+                "uri": "collaborators://templates/commit-format",
+                "name": "Commit Format Guide",
+                "description": "Complete guide for commit message collaboration tagging.",
+                "mimeType": "text/markdown",
+            },
+            {
+                "uri": "collaborators://templates/collaborators-template",
+                "name": "COLLABORATORS.md Template",
+                "description": "Template for repository adoption.",
+                "mimeType": "text/markdown",
+            },
+        ]
+
+        if not DISABLE_QUICK_REFERENCE:
+            resources.append(
                 {
                     "uri": "collaborators://quick-reference",
                     "name": "Quick Reference",
                     "description": "Condensed field reference and format guide.",
                     "mimeType": "text/markdown",
-                },
+                }
+            )
+
+        resources.extend(
+            [
                 {
                     "uri": "collaborators://fields",
                     "name": "Fields List",
@@ -385,6 +404,9 @@ This FAQ functions as a clarification template. Use it to generate context-appro
                     "mimeType": "text/plain",
                 },
             ]
+        )
+        result = {
+            "resources": resources
         }
         return _jsonrpc_result(req_id, result)
 
@@ -412,6 +434,8 @@ This FAQ functions as a clarification template. Use it to generate context-appro
         if not uri.startswith("collaborators://"):
             return _jsonrpc_error(req_id, -32602, "Unknown resource")
         key = uri.split("collaborators://", 1)[1]
+        if key == "quick-reference" and DISABLE_QUICK_REFERENCE:
+            return _jsonrpc_error(req_id, -32602, "Unknown resource")
 
         # Handle field template resources
         if key.startswith("field/"):
