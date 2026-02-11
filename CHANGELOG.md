@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-02-11 "Clarity"
+
 ### Changed
 
 - (MCP) Renamed `get_framework_overview` to `get_README`
@@ -25,7 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Removed two Voices of Collaboration to simplify README
 - Removed preamble from Voices of Collaboration
 
-## [0.3.0] - 2026-02-26
+## [0.3.0] - 2026-01-26
 
 Clarifies the Collaborators Framework's orientation toward non-permissioned participation and interpretive plurality.
 
@@ -229,3 +231,18 @@ No enforcement, ranking, or behavioral requirements are introduced in this relea
 ### Added
 
 - Initial release of the `COLLABORATORS.txt` standard.
+
+[Unreleased]: https://github.com/rob-mosher/collaborators-framework/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.3.1
+[0.3.0]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.3.0
+[0.2.0]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.2.0
+[0.1.3]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.1.3
+[0.1.2]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.1.2
+[0.1.1]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.1.1
+[0.1.0]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.1.0
+[0.0.6]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.0.6
+[0.0.5]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.0.5
+[0.0.4]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.0.4
+[0.0.3]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.0.3
+[0.0.2]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.0.2
+[0.0.1]: https://github.com/rob-mosher/collaborators-framework/releases/tag/v0.0.1

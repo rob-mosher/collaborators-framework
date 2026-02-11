@@ -120,7 +120,7 @@ def _handle_request(payload):
             },
             "serverInfo": {
                 "name": "collaborators-framework-mcp",
-                "version": "0.3.0",
+                "version": "0.3.1",
             },
         }
         return _jsonrpc_result(req_id, result)
