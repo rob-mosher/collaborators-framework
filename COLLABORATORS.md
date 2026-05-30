@@ -2,13 +2,13 @@
 
 This file acknowledges all contributors to this project, following the **Impact Above Origin** principle of the **Collaborators Framework**.
 
-Format: `Name | Intent | Nature | Role/Contribution | Freeform (optional)`
-Commit messages use the `Collaborator:` prefix; this file does not.
+Format: `Name | Intent | Nature | Role/Contribution | Freeform (optional)`  
+Commit messages use the `Collaborator:` prefix; this file does not.  
 
 ## Direct Collaborators
 
-Rob Mosher | Direct | Human | Creator, architect, and advocate
-ChatGPT (OpenAI) | Direct | AI | Collaborator and technical partner
+Rob Mosher | Direct | Human | Creator, architect, and advocate  
+ChatGPT (OpenAI) | Direct | AI | Collaborator and technical partner  
 Claude (Anthropic) | Direct | AI | Technical implementation and content refinement partner  
 
 ## Indirect Collaborators
